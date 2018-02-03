@@ -1,3 +1,6 @@
+cd
+bash.exe
+echo "I am in bash"
 pipeline{
         agent {
                 docker{
