@@ -1,7 +1,7 @@
-bat '
-cd
-bash.exe
-echo "I am in bash"
+#bat '
+#cd
+#bash.exe
+#echo "I am in bash"
 pipeline{
         agent {
                 docker{
@@ -12,7 +12,7 @@ pipeline{
         stages {
                 stage('Build') {
                         steps {
-                                sh 'mvn -B -DskipTests clean package'
+                                bat 'mvn -B -DskipTests clean package'
             }
         }
     }
